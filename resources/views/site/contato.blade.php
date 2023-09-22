@@ -10,9 +10,9 @@
 
     <div class="informacao-pagina">
         <div class="contato-principal">
-            @component('site.layouts._components.form_contato')
-            <p> LOGO ENTRAREMOS EM CONTATO </p>
-            <p> NOSSO TEMPO MÉDIO DE RESPOSTA É 48 HORAS </p>
+            @component('site.layouts._components.form_contato', ['classe' => 'borda-preta'])
+            <p> A nossa equipe analisará a sua mensagem e retornaremos o mais brevemente possível</p>
+            <p> Nosso tempo médio de resposta é de 48 horas </p>
             @endcomponent
 </div>
 </div>
@@ -33,7 +33,7 @@
 </div>
 <div class="localizacao">
     <h2>Localização</h2>
-    <img src="{{ asset('img/mapa.png) }}">
+    <img src="{{ asset('img/mapa.png') }}">
 </div>
 </div>
 @endsection
